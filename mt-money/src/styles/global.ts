@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     /*Global styles for application*/
@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0px;
         box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
     }
 
     // font-size = 16px;
@@ -33,6 +34,10 @@ export const GlobalStyle = createGlobalStyle`
     body{
         background: var(--background);
         -webkit-font-smooting: antialiased;
+ 
+    }
+    h1, h2, h3, h4, h5, h6, strong{
+        font-weight: 600;
     }
 
     button{
@@ -45,4 +50,4 @@ export const GlobalStyle = createGlobalStyle`
     }
 
 
-` 
+`;
