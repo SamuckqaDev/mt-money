@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Conatainer = styled.div`
+export const Container = styled.div`
   margin-top: 4rem;
 
   table {

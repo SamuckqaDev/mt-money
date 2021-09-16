@@ -1,8 +1,16 @@
-import { Conatainer } from "./styles";
+import { useEffect } from "react";
+import { api } from "../../services/api";
+import { Container } from "./styles";
 
-export function TrasactionTbale(){
+export function TransactionTbale(){
+
+    useEffect(()=>{
+        api.get('/transactions')
+        .then(response => console.log(response.data))
+    }, [])
+    
     return(
-        <Conatainer>
+        <Container>
             <table>
                 <thead>
                     <tr>
@@ -27,6 +35,6 @@ export function TrasactionTbale(){
                     </tr>
                 </tbody>
             </table>
-        </Conatainer>
+        </Container>
     )
 }
