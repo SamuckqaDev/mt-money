@@ -12,8 +12,6 @@ export const GlobalStyled = createGlobalStyle`
   --green: #33cc95;
   --black: #1c1c1c;
   --gray: #64676b;
-
- 
 }
 *,
 *:before,
