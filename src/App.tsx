@@ -1,10 +1,17 @@
+import styled from 'styled-components'
+import { GlobalStyled } from './styles/global';
 
+const Title = styled.h1 `
+  color: #8257e6;
+`
 
 export function App() {
   return (
     <div className="App">
-      <h1>Hello Wolrd !</h1>
+      <Title>Hello WOlrd !</Title>
+      <GlobalStyled />
     </div>
+   
   );
 }
 
