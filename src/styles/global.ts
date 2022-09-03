@@ -6,6 +6,8 @@ export const GlobalStyled = createGlobalStyle`
   --red: #e52e4d;
   --blue: #286db5;
   --blue-light: #328ae8;
+  --purple: #5429cc;
+  --purple-light: #6933ff;
   --text-title: #363f5f;
   --text-body: #969cb3;
   --shape: #ffffff;
@@ -58,9 +60,6 @@ main {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
 
 ol,
 ul {
@@ -94,8 +93,22 @@ body {
   height: 100%;
 }
 body {
-  background:var(--backgroud);
+  background: var(--background);
   -webkit-font-smoothing: antialiased;
   font-family: 'Poppins', sans-serif;
+  line-height: 1;
+}
+
+button{
+  cursor: pointer;
+}
+
+[disabled]{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 600;
 }
 `;
