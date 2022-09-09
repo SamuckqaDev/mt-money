@@ -23,10 +23,10 @@ export const GlobalStyled = createGlobalStyle`
 }
 
 html {
-  @media (max-width: 1080px) {
+  @media (max-inline-size: 1080px) {
     font-size: 93.75%; // = 15px if scrren equal 750px;
   }
-  @media (max-width: 750px) {
+  @media (max-inline-size: 750px) {
     font-size: 87.5%; // 14px if scrren equal 750px;
   }
 }
@@ -79,10 +79,7 @@ q:after {
   content: none;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+
 
 input {
   -webkit-appearance: none;
@@ -90,7 +87,7 @@ input {
 }
 html,
 body {
-  height: 100%;
+  block-size: 100%;
 }
 body {
   background: var(--background);
